@@ -17,37 +17,35 @@ public class ProblemThree {
 		
 		int count;
 		int count2 = 0;
-		
-		
+			
 		for (int i = 2; i <= n; i++) 
 		{
-            count = 0;
+            		count = 0;
             
-            //if number entered divides any number then set number entered equal to number entered divided by i 
-            while (n % i == 0) 
-            {
-                n /= i;
-                count++;
-            }
-                if (count == 0) 
-                {
+           		 //if number entered divides any number then set number entered equal to number entered divided by i 
+           		 while (n % i == 0) 
+           		 {
+               			 n /= i;
+               			 count++;
+            		}
+                	if (count == 0) 
+               		 {
                 		continue;
-                }
+               		 }
                 
-                //count2++ for * symbol
-                count2++;
+                	//count2++ for * symbol
+               		 count2++;
                 
-                if (count2 > 1)
-                {
+                	if (count2 > 1)
+                	{
                 		System.out.print("*" + i + "^" + count);
-                }
+               		}
                 
-                else
-                {
+               		 else
+              		{
                 		System.out.print(i + "^" + count);
-                }
-                
-            }
+                	}   
+            	}
         }
 }
 
